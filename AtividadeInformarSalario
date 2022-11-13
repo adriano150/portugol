@@ -1,0 +1,22 @@
+//Algoritmo que leia o valor que um funcionário ganha por hora e o número de horas trabalhadas no mês.
+//Calcular e mostrar o total do salário no mês.
+
+programa
+{
+	
+inclua biblioteca Matematica
+	funcao inicio()
+	{
+		real horaTrabalhada, valorHora, salarioFinal
+
+		escreva("Informe o valor da hora de trabalho: ")
+		leia(valorHora)
+		escreva("\nInforme a quantidade de horas trabalhadas: ")
+		leia(horaTrabalhada)
+
+		salarioFinal = horaTrabalhada * valorHora
+		salarioFinal = Matematica.arredondar(salarioFinal, 2)
+
+		escreva("\nO valor final do salário é R$: ", salarioFinal)
+	}
+}
