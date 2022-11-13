@@ -1,0 +1,38 @@
+/*Uma loja vende bicicletas com um acréscimo de 50% sobre o seu preço de custo.
+*Ela paga a cada vendedor dois salários-mínimos mensais, mais uma comissão de 10% sobre o preço de custo de cada bicicleta vendida,
+*divida igualmente entre eles.
+*Escreva um algoritmo que leia o número de vendedores da loja, o valor do salário-mínimo, o preço de custo de cada bicicleta e
+*o número de bicicletas vendidas.
+*Calcule e escreva: O salário final de cada vendedor e o lucro (líquido) da loja.
+*/
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real vendedores, salarioMinimo, custoBicicletas, bicicletasVendidas, valorbicicletasVendidas, salarioFinal
+		real comissao, lucroLiquido
+
+		escreva("Informe o número de vendedores: ")
+		leia(vendedores)
+
+		escreva("\nInforme o salário mínimo: ")
+		leia(salarioMinimo)
+		
+		escreva("\nInforme o custo de cada bicicleta: ")
+		leia(custoBicicletas)
+
+		escreva("\nInforme o número de bicicletas vendidas: ")
+		leia(bicicletasVendidas)
+
+		valorbicicletasVendidas = (custoBicicletas + (custoBicicletas * 0.5)) * bicicletasVendidas
+		comissao = (custoBicicletas * 0.10) * bicicletasVendidas
+		salarioFinal = 2 * salarioMinimo + (comissao / vendedores)
+		lucroLiquido = valorbicicletasVendidas - (salarioFinal * vendedores)
+		limpa()
+
+		escreva("O salário final de cada vendedor é R$: ", salarioFinal)
+		escreva("\nO lucro líquido foi de R$: ", lucroLiquido)
+	}
+}
