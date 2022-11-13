@@ -1,0 +1,29 @@
+//Uma escola deseja dividir os alunos de uma série em três turmas.
+//Estretanto, deverá ocorrer um equilíbrio no número de alunos em cada turma.
+//Caso ocorra diferença no número de alunos, ela deve ser mínima.
+//Escreva um algoritmo que leia o número de alunos da sére, calcule e mostre o número de alunos em cada turma
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numeroAlunos, turmaA, turmaB, turmaC
+		escreva("Informe o número de alunos: ")
+		leia(numeroAlunos)
+
+		turmaA = numeroAlunos / 3
+
+		numeroAlunos -= turmaA
+
+		turmaB = numeroAlunos / 2
+
+		numeroAlunos -= turmaB
+
+		turmaC = numeroAlunos
+
+		limpa()
+
+		escreva("A turma A tem ", turmaA," alunos")
+		escreva("\nA turma B tem ", turmaB," alunos")
+		escreva("\nA turma C tem ", turmaC," alunos")
