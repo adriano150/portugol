@@ -1,0 +1,49 @@
+/* Escreva um algoritmo para ler 2 valores e uma das seguintes operações a serem executadas/codificada da seguinte forma:
+ * 1.Adiçaõ, 2. Subtração, 3.Multiplicação, 4.Divisão.
+ * Calcular e escrever o resultado dessa operação sobre os dois valores lidos.
+ */
+
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro operacao
+		real resultado, primeiroValor, segundoValor
+		
+		escreva("Informe o 1º valor: ")
+		leia(primeiroValor)
+		escreva("\nInforme o 2º valor: ")
+		leia(segundoValor)
+		limpa()
+
+		escreva("Selecione uma opção abaixo: ")
+		escreva("\n1 - Adição")
+		escreva("\n2 - Subtração")
+		escreva("\n3 - Multiplicação")
+		escreva("\n4 - Divisão\n")
+		leia(operacao)
+		limpa()
+
+		escolha(operacao){
+		     caso 1:
+		     resultado = primeiroValor + segundoValor
+		     escreva(primeiroValor, " + ", segundoValor, " = ", resultado)
+		     pare
+		     caso 2:
+		     resultado = primeiroValor - segundoValor
+		     escreva(primeiroValor, " - ", segundoValor, " = ", resultado)
+		     pare
+		     caso 3:
+		     resultado = primeiroValor * segundoValor
+		     escreva(primeiroValor, " * ", segundoValor, " = ", resultado)
+		     pare
+		     caso 4:
+		     resultado = primeiroValor / segundoValor
+		     escreva(primeiroValor, " / ", segundoValor, " = ", resultado)
+		     pare
+		     caso contrario:
+		     escreva("Operação inválida")
+	      }
+     }
+}
